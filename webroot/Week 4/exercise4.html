@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+            <form method="GET" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php" target="_blank">
+                    <link rel="stylesheet" type="text/css" href="exercise.css">
+                    <link rel="stylesheet" type="text/css" href="reset.css">
+                <fieldset class = "everything">
+                    <legend id= "header">Shirt Order Form</legend>
+                    <p>
+                        <section class="first">
+                            <label>Shirt Size</label><br>
+                            <select name="Shirt Size">
+                                <option>Choose size</option>
+                                <option>XS</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                            <p>
+                                <label>Sleeves</label><br>
+                                <input type="radio" name="Sleeves" value ="Short" checked>Short<br>
+                                <input type="radio" name="Sleeves" value ="Long">Long <br>
+                            </p>
+                            <p>
+                                <label>Choose Shirt Colour</label><br>
+                                <input type="color" name="colorChoice">
+                            </p>
+                            <p>
+                                <label>Quantity</label><br>
+                                <input type = "number" min="1" max="10" name="quantity">
+                            </p>
+                            <p>
+                                <label>Date Requested</label><br>
+                                <input type ="date" name="DoB">
+                            </p>
+                        </section>
+                        <section class="second">
+                                <label>Name</label><br>
+                                <input type = "text" name="Name">
+                            </p>
+                            <p>
+                                <label>Email</label><br>
+                                <input type = "email" name="Email">
+                            </p>
+                            <p>
+                                <label>Telephone</label><br>
+                                <input type = "tel" name= "Phone" id="phone" pattern="[4]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <t>Example: 44-207-882-1234</t>
+                            </p>
+                        </section>
+                        <section class="third">
+                            <p>
+                                <label>Address</label><br>
+                                <textarea name="Address"></textarea>
+                            </p>
+                            <p>
+                                <label>City</label><br>
+                                <input type="text" name="city" list="cities">
+                                <datalist id="cities">
+                                    <option>London</option>
+                                    <option>Reading</option>
+                                    <option>Southampton</option>
+                                    <option>Surrey</option>
+                                </datalist>
+                            </p>
+                            <p>
+                                <label>Postcode</label><br>
+                                <input type = "text" name="Postcode">
+                            </p>
+                        </section>
+                        <section class="fourth">
+                            <p>
+                                <label>Please keep me informed about future shirt offerings</label>
+                                <input type = "checkbox" name="Accepted">
+                            </p>
+                    </p>
+                        <input id = "subbutton" type="submit"> <input id="clearbutton" type="reset" value="Clear Form">
+                        </section>
+                </fieldset>
+            </form>
+</html>
+     

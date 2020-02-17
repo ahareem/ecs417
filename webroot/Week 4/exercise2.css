@@ -1,0 +1,44 @@
+table
+{
+    border: solid 1pt grey;
+    padding: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+caption
+{
+    background-color: maroon;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding:0.5em;
+    font-weight: bold 10em;
+    font-size:14;
+
+
+}
+
+#header
+{
+    background-color: rgb(211, 211, 211);
+}
+td
+{
+    border: solid 1pt grey;
+    padding:10pt;
+    font-size:12;
+}
+
+
+th
+{
+    border: solid 1pt grey;
+    padding:2pt;
+    font-size: 12;
+}
+
+img
+{
+    height: 13em;
+    width: 9em;
+    border-radius: 15%;
+}
