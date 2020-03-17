@@ -1,0 +1,51 @@
+
+#first
+{
+    text-align: center;
+    background-color: orange;
+    font-family: Arial, sans-serif;
+}
+
+#last
+{
+    color: grey;
+    text-align: center;
+    background-color: orange;
+    font-family: Arial, sans-serif;
+    padding:0.5em;
+}
+
+#firstrow
+{
+    color:#fff;
+    background-color:#000;
+}
+.something
+{
+    background-color: black;
+    color: white;
+    
+}
+
+table
+{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 1px;
+}
+
+td
+{
+    padding: 0.5em;
+    color: grey;
+    font-weight: bold;
+    background-color: rgba(225, 221, 221, 0.208);
+    border: black, 0.5px;
+  
+}
+
+th
+{
+    padding: 0.5em;
+}

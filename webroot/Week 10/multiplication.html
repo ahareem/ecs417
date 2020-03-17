@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel = "stylesheet" href = "style.css" type = "text/css">
+            <title>Multiplication Table</title>
+            
+                <script>
+                    document.write("<table border='1px'>");
+                        document.write("<th id= first colspan='16'>"+"Multiplication Table" +"</th>");
+                        document.write("<tr id = firstrow>");
+                        document.write("<th>" + "X"+ "</th>")
+                        for(i = 1; i < 16; i++)
+                        {
+                            document.write("<th>" + i + "</th>");
+                            
+                        }
+                        
+                         document.write("</tr>"); 
+                         
+                        
+                        for(k = 1; k<16; k++)
+                        {
+                            document.write("<th class= 'something'>" + k+ "</th>")
+                            for(j= 1; j< 16; j++)
+                            {
+                            
+                             document.write("<td>"+ j*k + "</td>")   
+                            }
+                            
+                             document.write("</tr>"); 
+                        }
+                        document.write("<th id= last colspan='16'>"+"JavaScript" +"</th>");
+                        document.write("</table>");
+
+       
+                </script>
+        </head>
+            <body>
+            </body>
+    </html>
