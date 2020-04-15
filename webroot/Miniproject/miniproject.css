@@ -1,0 +1,194 @@
+*, body, html{
+    margin:0;
+    padding: 0;
+}
+.bckimg
+{
+    max-height: 100vh;
+    width: 100vw;
+}
+
+.hr
+{
+    border: 0.1em solid pink;
+}
+
+.hrhead
+{
+    border: 0.1em solid pink!important;
+    border-radius: 5em;
+
+}
+.me
+{
+    max-height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+}
+
+h1
+{
+    text-align: center;
+    font-family: Snell Roundhand, cursive;
+    font-size: 100em;
+}
+
+a:link, a:visited 
+{
+    color: rgb(255, 168, 183);
+    font-family: Gill Sans, sans-serif ;
+}
+
+p, h3
+{
+    font-family: Gill Sans, sans-serif;
+}
+h3
+{
+    text-align: center;
+}
+.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow
+{
+    margin-top: 5em;
+    padding: 4em;
+}
+
+tr
+{
+    font-size: 0.8em;
+    font-family: Gill Sans, sans-serif ;
+    color: white;
+}
+
+th
+{
+    font-size:1.1em;
+}
+
+.table-hover 
+{
+    background-color:rgb(245, 182, 182);
+    
+    
+}
+
+.col
+{
+    font-family: Gill Sans, sans-serif ;
+}
+
+/* Timeline */
+html,
+body {
+  font: 100% "Lato", sans-serif;
+  font-weight: 300;
+  height: 100%;
+  background-color: white;
+}
+
+.blue-bg {
+  background-color: white;
+  color: #ED8D8D;
+  height: 100%;
+}
+
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: #ED8D8D;
+  color: #4D4545;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row 
+{
+  display: flex;
+}
+
+.how-it-works.row .col-2 
+{
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works.row .col-2::after 
+{
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ED8D8D;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after 
+{
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+
+.how-it-works.row .col-2.full::after 
+{
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after 
+{
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div 
+{
+  padding: 0;
+  height: 40px;
+}
+.timeline hr 
+{
+  border-top: 3px solid #ED8D8D;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+
+.timeline .col-2 
+{
+  display: flex;
+  overflow: hidden;
+}
+
+.timeline .corner 
+{
+  border: 3px solid #ED8D8D;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.timeline .top-right 
+{
+  left: 50%;
+  top: -50%;
+}
+
+.timeline .left-bottom 
+{
+  left: -50%;
+  top: calc(50% - 3px);
+}
+
+.timeline .top-left 
+{
+  left: -50%;
+  top: -50%;
+}
+
+.timeline .right-bottom 
+{
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
