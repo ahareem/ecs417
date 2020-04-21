@@ -1,6 +1,6 @@
 <?php
 
-    require_once("Miniproject/config.php");
+    require_once("/opt/app-root/src/webroot/Miniproject/config.php");
     session_start();
 
     if(isset ($_POST['email']) && isset ($POST['psw'])) //isset checks if the vars have been filled 
@@ -14,11 +14,11 @@
         //if no of rows =1 in table (which it will as it will only contain one row of info (mine))
         if(mysqli_fetch_assoc($result))
         {
-            header("Location: Miniproject/addPost.html");
+            header("Location: /opt/app-root/src/webroot/Miniproject/addPost.html");
         }
         else
         {
-            header("Location: Miniproject/index.html");
+            header("Location: /opt/app-root/src/webroot/Miniproject/index.html");
         }
     }
 
