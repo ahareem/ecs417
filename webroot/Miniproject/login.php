@@ -3,14 +3,20 @@
 	session_start();
     include("config.php");
 
-    if(isset ($_POST['email']) && isset ($POST['psw'])) //isset checks if the vars have been filled 
+    if($_SERVER["REQUEST_METHOD"] == "POST") 
     {
+		$myemail = mysqli_real_escape_string($conn, $_POST['email']);
+      	$mypassword = mysqli_real_escape_string($conn, $_POST['psw']); 
+      
+        $sql = "select * from USERS where email = '$myemail' AND password = '$mypassword'"; // CHECK FOR THE RECORD FROM TABLE * selects all fields
 
-        $sql = "select * from USERS where email = '".$_POST['email']."' AND password = '".$_POST['psw']."'"; // CHECK FOR THE RECORD FROM TABLE * selects all fields
-
-        $result = $conn->query($sql); //sends a query to the mysql database 
-
-        if($result -> num_rows > 0)
+        $result = mysqli_query($conn,$sql);
+      	$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      	$active = $row['active'];
+		
+		$count = mysqli_num_rows($result);
+		
+        if($count == 1)
         {
             header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/addPost.html");
 			exit();
@@ -21,5 +27,9 @@
 			exit();
         }
     }
+	else 
+		{
+         	echo("Your Login Name or Password is invalid");
+      	}
 
 ?>
