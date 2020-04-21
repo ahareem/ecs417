@@ -1,7 +1,7 @@
 <?php
 
+	session_start();
     include("config.php");
-    session_start();
 
     if(isset ($_POST['email']) && isset ($POST['psw'])) //isset checks if the vars have been filled 
     {
