@@ -1,6 +1,6 @@
 <?php
 
-    require_once("config.php");
+    require_once("Miniproject/config.php");
     session_start();
 
     if(isset ($_POST['email']) && isset ($POST['psw'])) //isset checks if the vars have been filled 
@@ -14,11 +14,11 @@
         //if no of rows =1 in table (which it will as it will only contain one row of info (mine))
         if(mysqli_fetch_assoc($result))
         {
-            header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/addPost.html");
+            header("Location: Miniproject/addPost.html");
         }
         else
         {
-            header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/index.html");
+            header("Location: Miniproject/index.html");
         }
     }
 
