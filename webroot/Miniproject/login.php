@@ -10,7 +10,7 @@
 
         $result = $conn->query($sql); //sends a query to the mysql database 
 
-        if($result === TRUE)
+        if($result !== false)
         {
             header("Location: /opt/app-root/src/webroot/Miniproject/addPost.html");
 			exit();
