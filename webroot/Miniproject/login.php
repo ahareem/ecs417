@@ -11,8 +11,7 @@
         $result = mysqli_query($conn ,$query); //sends a query to the mysql database 
 
 
-        //if no of rows =1 in table (which it will as it will only contain one row of info (mine))
-        if(mysqli_fetch_assoc($result))
+        if(mysqli_num_rows($result) == 1)
         {
             header("Location: /opt/app-root/src/webroot/Miniproject/addPost.html");
         }
