@@ -12,12 +12,12 @@
 
         if($result -> num_rows > 0)
         {
-            header(string: "Location: addPost.html");
+            header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/addPost.html");
 			exit();
         }
         else
         {
-            header(string: "Location: login.html");
+            header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/login.html");
 			exit();
         }
     }
