@@ -12,11 +12,13 @@
 
         if($result === TRUE)
         {
-            header("Location: addPost.html");
+            header(string: "Location: addPost.html");
+			exit();
         }
         else
         {
-            header("Location: index.html");
+            header(string: "Location: index.html");
+			exit();
         }
     }
 
