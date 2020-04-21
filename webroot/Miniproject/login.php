@@ -8,10 +8,10 @@
 
         $sql = "select * from USERS where email = '".$_POST['email']."' AND password = '".$_POST['psw']."'"; // CHECK FOR THE RECORD FROM TABLE * selects all fields
 
-        $result = mysqli_query($conn ,$query); //sends a query to the mysql database 
+        $result = $conn->query($sql); //sends a query to the mysql database 
 
 
-        if($conn->query($sql) === TRUE)
+        if($result === TRUE)
         {
             header("Location: /opt/app-root/src/webroot/Miniproject/addPost.html");
         }
