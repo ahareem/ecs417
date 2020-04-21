@@ -14,11 +14,11 @@
         //if no of rows =1 in table (which it will as it will only contain one row of info (mine))
         if(mysqli_fetch_assoc($result))
         {
-            header("Location: addPost.html");
+            header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/addPost.html");
         }
         else
         {
-            header("Location: index.html");
+            header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/index.html");
         }
     }
 
