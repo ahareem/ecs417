@@ -12,12 +12,12 @@
 
         if($result -> num_rows > 0)
         {
-            header("Location: addPost.html");
+            header(string: "Location: addPost.html");
 			exit();
         }
         else
         {
-            header("Location: login.html");
+            header(string: "Location: login.html");
 			exit();
         }
     }
