@@ -12,12 +12,12 @@
 
         if($result === TRUE)
         {
-            header(string: "Location: addPost.html");
+            header("Location: /opt/app-root/src/webroot/Miniproject/addPost.html");
 			exit();
         }
         else
         {
-            header(string: "Location: index.html");
+            header("Location: /opt/app-root/src/webroot/Miniproject/index.html");
 			exit();
         }
     }
