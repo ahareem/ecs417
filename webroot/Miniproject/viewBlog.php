@@ -13,7 +13,7 @@
 
                 if(mysqli_num_rows($result)>0)
                 {
-                    while($row = mysqli_fetch_assco($result))
+                    while($row = mysqli_fetch_assoc($result))
                     {
                         $title = $row['title'];
                         $entry = $row['entry'];
