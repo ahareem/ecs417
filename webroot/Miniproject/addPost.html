@@ -1,6 +1,67 @@
+<!DOCTYPE html>
 <html>
-<header><title>This is title</title></header>
-<body>
-    Hello world
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "addPost.css" type = "text/css">
+    </head>
+        <body>
+            <div>
+                <header><title>Add Blog</title></header>
+                <form id="entryform" class = contain action="addPost.php" method = "post">
+                    <h1>Add Blog</h1>
+                    <div class="title">
+                        <input type="text" name = "title" id="titletext" placeholder="Title">
+                    </div>
+                    <div class="entry">
+                        <textarea name="entry" id="textbox" rows="8" placeholder="Enter your text here"></textarea>
+                    </div>
+                        <button id= "btn" type="submit" name = "post" class="button" >Post</button>
+                        <button id = "clr" type="button" name = "clear" class="button" onclick="alertBox()">Clear</button>
+                </form>
+            </div>
+            <script>
+
+                document.getElementById("entryform").onsubmit = function(e){
+                    var text = document.getElementById("textbox").value;
+                    var title = document.getElementById("titletext").value;
+                    if(text== "" || title == "")
+                    {
+                        
+                        document.getElementById("textbox").classList.add("mystyle")
+                        document.getElementById("titletext").classList.add("mystyle")
+                        alert("Missing fields highlighted!!")
+                        
+                        e.preventDefault();
+                        
+                    }
+                    else
+                    {
+                        document.getElementById("textbox").classList.add("mystyle")
+                        document.getElementById("titletext").classList.add("mystyle")
+                    }
+                
+                }
+
+
+                function alertBox()
+                {
+                    var ans = confirm("Are you sure you want to clear the contents? Press OK if you are sure you want to clear the contents.");
+                    if(ans==true)
+                    {
+                        titletext.value = "";
+                        textbox.value = "";
+                        document.getElementById("textbox").classList.remove("mystyle")
+                        document.getElementById("titletext").classList.remove("mystyle")
+                    }
+                    else
+                    {
+                        document.getElementById("textbox").classList.remove("mystyle")
+                        document.getElementById("titletext").classList.remove("mystyle")
+                    }
+                }
+                
+              
+                
+            </script>
+        </body>
 </html>
