@@ -19,11 +19,11 @@
                         $entry = $row['entry'];
                         $date = $row['date'];
 
-                        "<div>"   
-							echo "<p>".$date."</p>"
-             				echo "<p>".$title."</p>"
-             				echo "<p>".$entry."</p>"
-						"</div>"
+                        echo "<div>";   
+							echo "<p>".$date."</p>";
+             				echo "<p>".$title."</p>";
+             				echo "<p>".$entry."</p>";
+						echo "</div>";
                     }
                 }
                 else
