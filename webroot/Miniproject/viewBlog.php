@@ -19,7 +19,6 @@
 
                 if(mysqli_num_rows($result)>0)
                 {
-					echo "<
                     while($row = mysqli_fetch_assoc($result))
                     {
                         $title = $row['title'];
