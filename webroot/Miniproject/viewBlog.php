@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta charset="utf-8">
+        <link rel = "stylesheet" href = "viewBlog.css" type = "text/css">
         <title>BLOG POSTS</title>
     </head>
-        <body>
+		<a id="add" href="url">Add Post </a>
+        <a id= "logout" href="url">Logout</a>
+        <br>
+        <hr>
+        <body class="container">
             <?php
     
                 include("config.php");
@@ -13,6 +19,7 @@
 
                 if(mysqli_num_rows($result)>0)
                 {
+					echo "<
                     while($row = mysqli_fetch_assoc($result))
                     {
                         $title = $row['title'];
@@ -20,9 +27,9 @@
                         $date = $row['date'];
 
                         echo "<div>";   
-							echo "<p>".$date."</p>";
-             				echo "<p>".$title."</p>";
-             				echo "<p>".$entry."</p>";
+							echo "<p class = "date"><img id = "image" src="clock.png">".$date."</p>";
+             				echo "<p class = "title">".$title."</p>";
+             				echo "<p class= "entry">".$entry."</p><hr>";
 						echo "</div>";
                     }
                 }
