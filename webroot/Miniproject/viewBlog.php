@@ -26,9 +26,9 @@
                         $date = $row['date'];
 
                         echo "<div>";   
-							echo "<p class = "date"><img id = "image" src="clock.png">".$date."</p>";
-             				echo "<p class = "title">".$title."</p>";
-             				echo "<p class= "entry">".$entry."</p><hr>";
+							echo '<p class = "date"><img id = "image" src="clock.png">'.$date.'</p>';
+             				echo '<p class = "title">'.$title.'</p>';
+             				echo '<p class= "entry">'.$entry.'</p><hr>';
 						echo "</div>";
                     }
                 }
