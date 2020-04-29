@@ -20,9 +20,9 @@
                         $date = $row['date'];
 
                         "<div>   
-							<p>  echo $row['date'] </p>
-             				<p>  echo $row['title'] </p>
-             				<p>  echo $row['entry'] </p>
+							<p>"  echo $row['date'] "</p>"
+             				"<p>"  echo $row['title'] "</p>"
+             				"<p>"  echo $row['entry'] "</p>
 						</div>"
                     }
                 }
