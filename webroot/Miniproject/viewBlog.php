@@ -11,7 +11,8 @@
         <hr>
         <body class="container">
             <?php
-    
+    			
+				session_start();
                 include("config.php");
                 $sql = "select * from ENTRIES ORDER BY ID DESC";
 
