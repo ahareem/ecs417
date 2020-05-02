@@ -18,6 +18,8 @@
 		
         if($count == 1)
         {
+			$_SESSION['status'] = true;
+            $_SESSION['user'] = $myemail;
             header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/addPost.html");
 			exit();
         }
