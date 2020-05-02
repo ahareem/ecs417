@@ -1,7 +1,7 @@
 <?php
     session_start();
     include("config.php");
-    if(isset($_SESSION['status']) && ($_SESSION['status'] == true)) 
+    if(isset($_SESSION['user']) && ($_SESSION['status'] == true)) 
     {
         $title = mysqli_real_escape_string($conn, $_POST['title']);
         $entry = mysqli_real_escape_string($conn, $_POST['entry']);
