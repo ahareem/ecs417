@@ -5,7 +5,7 @@
         <link rel = "stylesheet" href = "viewBlog.css" type = "text/css">
         <title>BLOG POSTS</title>
     </head>
-		<a id="add" href="http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/addPost.html">Add Post </a>
+		<a id="add" href="http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/status.php">Add Post </a>
         <a id= "logout" href="http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/logout.php">Logout</a>
         <br>
         <hr>
