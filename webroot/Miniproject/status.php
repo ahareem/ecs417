@@ -9,7 +9,7 @@
     }
     else
     {
-        header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/viewPost.php");
+        header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/login.html");
         exit();
     }
 ?>
