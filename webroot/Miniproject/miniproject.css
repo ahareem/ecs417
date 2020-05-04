@@ -1,3 +1,4 @@
+
 *, body, html{
     margin:0;
     padding: 0;
@@ -17,8 +18,34 @@
 {
     border: 0.1em solid pink!important;
     border-radius: 5em;
-
 }
+
+.header li
+{
+  display: inline;
+}
+
+.header
+{
+  text-align: center;
+  word-spacing: 1em;
+  color:black;
+}
+
+#navbar
+{
+  background-color:  rgb(247, 182, 193);
+  padding: 0.8em;
+  padding-top: 1.5em;
+}
+
+
+.headerimg
+{
+  background-image: url(blog.jpeg);
+  
+}
+
 .me
 {
     max-height: 35vh;
@@ -33,10 +60,29 @@ h1
     font-size: 100em;
 }
 
-a:link, a:visited 
+li a:link
 {
-    color: rgb(255, 168, 183);
-    font-family: Gill Sans, sans-serif ;
+    color: black;
+    font-family: Gill Sans, sans-serif;
+    text-decoration: none;
+}
+
+a:visited
+{
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover
+{
+  color: white;
+  text-decoration: none;
+}
+
+a:active
+{
+  color:black;
+  text-decoration: none;
 }
 
 p, h3
@@ -68,16 +114,140 @@ th
 .table-hover 
 {
     background-color:rgb(245, 182, 182);
-    
-    
 }
 
-.col
+.btn
 {
-    font-family: Gill Sans, sans-serif ;
+  font-family: Gill Sans, sans-serif;
 }
 
-/* Timeline */
+.btn :active
+{
+  color: pink;
+}
+
+#but
+{
+  background-image: url(blog.jpeg);
+  color: black;
+  border: none;
+}
+
+.bi
+{
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#medal
+{
+  width: 3em;
+  height: 3em;
+  margin-left: 2em;
+}
+
+#medalbox
+{
+  font-family: Gill Sans, sans-serif;
+  font-size: 1.7em;
+}
+
+#medal1
+{
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+  
+}
+
+#medal2
+{
+  width: 3em;
+  height: 3em;
+  margin-left: 2em;
+  
+}
+
+#medal3
+{
+  width: 3em;
+  height: 3em;
+  margin-left: 1.8em;
+}
+
+.carousel 
+{
+  position: relative;
+  width: 45em;
+  height: 27.5em;
+  margin-left: 14em;
+  margin-top: 5em;
+}
+
+figcaption
+{
+  font-family: Gill Sans, sans-serif;
+  font-style: italic;
+
+}
+
+.back
+{
+  position: relative;
+  margin-left: 20em;
+
+}
+
+.textwithinback
+{
+  position: absolute;
+  top: 10em;
+  padding: 8em;
+  margin-top: -18em;
+  font-family: Gill Sans, sans-serif;
+  text-align: center;
+}
+
+#softskills
+{
+  font-family: Gill Sans, sans-serif;
+  border: black;
+  border-width: 5em;
+  font-size: 1.1em;
+  position: absolute;
+  margin-bottom: 2em;
+  margin-left: 12em;
+  margin-right: 3em;
+}
+.icons
+{
+  position: absolute;
+  margin-left: 35em;
+  margin-bottom: 1em;
+}
+
+#bottom
+{
+  background-color: rgb(247, 182, 193);
+  text-align: center;
+  padding: 0.2em;
+  
+}
+
+.resize
+{
+  height:1em;
+  width:1em;
+}
+
+
+/* Timeline  
+Author: CP Lepag
+Source: https://freefrontend.com/css-timelines/
+Code and Demo from website: https://codepen.io/cplepage/pen/EozVXL
+Date Published: January 24, 2018
+Date Accessed: 22/03/2020
+*/
 html,
 body {
   font: 100% "Lato", sans-serif;
@@ -88,7 +258,7 @@ body {
 
 .blue-bg {
   background-color: white;
-  color: #ED8D8D;
+  color: rgb(247, 182, 193);
   height: 100%;
 }
 
@@ -96,7 +266,7 @@ body {
   font-weight: bold;
   padding: 15px 20px;
   border-radius: 50%;
-  background-color: #ED8D8D;
+  background-color: rgb(247, 182, 193);;
   color: #4D4545;
   max-height: 50px;
   z-index: 2;
@@ -119,7 +289,7 @@ body {
 {
   content: "";
   position: absolute;
-  border-left: 3px solid #ED8D8D;
+  border-left: 3px solid rgb(247, 182, 193);;
   z-index: 1;
 }
 .how-it-works.row .col-2.bottom::after 
@@ -148,7 +318,7 @@ body {
 }
 .timeline hr 
 {
-  border-top: 3px solid #ED8D8D;
+  border-top: 3px solid rgb(247, 182, 193);;
   margin: 0;
   top: 17px;
   position: relative;
@@ -162,7 +332,7 @@ body {
 
 .timeline .corner 
 {
-  border: 3px solid #ED8D8D;
+  border: 3px solid rgb(247, 182, 193);;
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -192,3 +362,42 @@ body {
   top: calc(50% - 3px);
 }
 
+/*From W3 Schools, cited fontawesome.com*/
+.fa 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.fa:hover 
+{
+    opacity: 0.7;
+}
+
+.fa-linkedin
+{
+  background: rgb(247, 182, 193);
+  color: black;
+}
+
+.fa-instagram 
+{
+  background: rgb(247, 182, 193);
+  color: black;
+}
+
+.fa-linkedin:hover
+{
+  color:white;
+  text-decoration: none;
+}
+
+.fa-instagram:hover
+{
+  color:white;
+  text-decoration: none;
+}
