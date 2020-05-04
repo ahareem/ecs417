@@ -26,11 +26,13 @@
                         $entry = $row['entry'];
                         $date = $row['date'];
 
-                        echo "<div>";   
+                        echo "<article>"; 
+						echo "<section>";
 							echo '<p class = "date"><img id = "image" src="clock.png">'.$date.'</p>';
              				echo '<p class = "title">'.$title.'</p>';
              				echo '<p class= "entry">'.$entry.'</p><hr>';
-						echo "</div>";
+						echo "</section>";
+						echo "</article>";
                     }
                 }
                 else
