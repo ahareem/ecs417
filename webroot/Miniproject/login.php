@@ -11,9 +11,6 @@
         $sql = "select * from USERS where email = '$myemail' AND password = '$mypassword'"; // CHECK FOR THE RECORD FROM TABLE * selects all fields
 
         $result = mysqli_query($conn,$sql);
-      	$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      	$active = $row['active'];
-		
 		$count = mysqli_num_rows($result);
 		
         if($count == 1)
