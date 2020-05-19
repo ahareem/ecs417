@@ -22,9 +22,7 @@
         }
         else
         {
-			<script>
-				alert("Invalid credentials!");
-			</script>
+			echo"<script> alert('Invalid credentials!') </script>";
 		
             header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/login.html");
 			exit();
