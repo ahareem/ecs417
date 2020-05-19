@@ -22,14 +22,14 @@
         }
         else
         {
-			echo"<script> alert('Invalid credentials!') </script>";
-		
             header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/login.html");
 			exit();
         }
     }
 	else 
 		{
+			echo"<script> alert("Invalid credentials!") </script>";
+			header("Location: http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/login.html");
       	}
 
 ?>
