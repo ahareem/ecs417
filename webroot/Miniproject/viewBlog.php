@@ -8,28 +8,26 @@
                 include("config.php");
                 $sql = "select * from ENTRIES ORDER BY ID DESC";
 
-                $result =  mysqli_query($conn,$sql);
-
                 if(mysqli_num_rows($result)>0)
                 {
-                    while($row = mysqli_fetch_assoc($result))
+                    while($row = mysqli_fetch_assoc(mysqli_query($conn,$sql)))
                     {
                         $title = $row['title'];
                         $entry = $row['entry'];
                         $date = $row['date'];
 
                         echo "<article>"; 
-						echo "<section>";
-							echo '<p class = "date"><img id = "image" src="clock.png">'.$date.'</p>';
-             				echo '<p class = "title">'.$title.'</p>';
-             				echo '<p class= "entry">'.$entry.'</p><hr>';
-						echo "</section>";
+							echo "<section>";
+								echo '<p class = "date"><img id = "image" src="clock.png">'.$date.'</p>';
+             					echo '<p class = "title">'.$title.'</p>';
+             					echo '<p class= "entry">'.$entry.'</p><hr>';
+							echo "</section>";
 						echo "</article>";
                     }
                 }
                 else
                 {
-                    echo("There are no posts to display!");
+                    echo("no posts to display");
                 }
 			echo "</body>";
 ?>
