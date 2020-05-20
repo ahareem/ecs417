@@ -8,7 +8,7 @@
                 include("config.php");
                 $sql = "select * from ENTRIES ORDER BY ID DESC";
 
-                if(mysqli_num_rows($result)>0)
+                if(mysqli_num_rows(mysqli_query($conn,$sql))>0)
                 {
                     while($row = mysqli_fetch_assoc(mysqli_query($conn,$sql)))
                     {
