@@ -1,5 +1,5 @@
 <?php
-		echo '<link rel = "stylesheet" href = "viewBlog.css" type = "text/css">'
+		echo '<link rel = "stylesheet" href = "viewBlog.css" type = "text/css">';
 		echo '<a id="add" href="http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/status.php">Add Post </a>';
         echo '<a id= "logout" href="http://cakephp-mysql-persistent-webtechshit.bde1.qmul-eecs.openshiftapps.com/Miniproject/logout.php">Logout</a><br><hr>';
         echo "<body class='container'>";
