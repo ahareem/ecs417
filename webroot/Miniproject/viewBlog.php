@@ -10,8 +10,6 @@
 				
 				$ent =  mysqli_query($conn,$sql);
 
-                if(mysqli_num_rows($ent)>0)
-                {
                     while($row = mysqli_fetch_array($ent))
                     {
                         $title = $row['title'];
@@ -26,10 +24,6 @@
 							echo "</section>";
 						echo "</article>";
                     }
-                }
-                else
-                {
-                    echo("no posts to display");
-                }
+               
 			echo "</body>";
 ?>
